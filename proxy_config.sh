@@ -1,9 +1,14 @@
+#!/bin/bash
+
+# 在下面修改ip和端口
+ip=192.168.254.1
+port=7890
 
 # 开启代理
 function proxy_on(){
-    export ALL_PROXY=socks5://127.0.0.1:1087  # 注意你的端口号可能不是1087，注意修改
-    export http_proxy=http://127.0.0.1:1087
-    export https_proxy=https://127.0.0.1:1087
+    export ALL_PROXY=socks5://$ip:$port  
+    export http_proxy=http://$ip:$port
+    export https_proxy=https://$ip:$port
     echo -e "已开启代理"
 }
 
