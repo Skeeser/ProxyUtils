@@ -66,6 +66,16 @@ curl www.google.com
 
 之后每次使用，只要执行**快速开始**中的**运行**即可
 
+## Git 代理设置
+
+如果想要使用 git 代理
+运行
+
+```
+cd ./ProxyUtils
+chmod +x ./git_proxy.sh && ./git_proxy.sh
+```
+
 ## 许可证
 
 MPL 2.0
