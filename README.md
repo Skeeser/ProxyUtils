@@ -29,7 +29,7 @@ git clone git@github.com:Skeeser/ProxyUtils.git
 
 ```
 cd ./ProxyUtils
-./build.sh
+chmod +x ./build.sh && ./build.sh
 ```
 
 3. 修改代理的 ip
