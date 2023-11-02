@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # 在下面修改ip和端口
-ip=192.168.254.1
+ip=192.168.137.1
 port=7890
 
 # 重置代理
-# git config --global  --unset https.https://github.com.proxy 
-# git config --global  --unset http.https://github.com.proxy 
+git config --global  --unset https.https://github.com.proxy 
+git config --global  --unset http.https://github.com.proxy 
 
 # http
 # git config --global http.https://github.com.proxy http://$ip:$port
