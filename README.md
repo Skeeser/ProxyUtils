@@ -2,13 +2,20 @@
 
 My Linux proxy tools
 
+<br>
+
 ## 功能特性
 
-能够在 Linux 系统中用 shell 脚本开启和关闭代理
+- 能够在 Linux 系统中用 shell 脚本开启和关闭代理
+- 能够 Linux 系统使用git, 没有dns污染
+
+<br>
 
 ## 软件架构
 
 Linux
+
+<br>
 
 ## 快速开始
 
@@ -16,18 +23,20 @@ Linux
 
 确保局域网中有主机开启了梯子
 
+<br>
+
 ### 构建
 
 1. 先克隆本项目
 
-```
+```shell
 cd ~
 git clone git@github.com:Skeeser/ProxyUtils.git
 ```
 
 2. 运行构建脚本
 
-```
+```shell
 cd ./ProxyUtils
 chmod +x ./build.sh && ./build.sh
 ```
@@ -38,23 +47,39 @@ chmod +x ./build.sh && ./build.sh
 
 修改`~/ProxyUtils/proxy_config.sh`文件中的 ip 和端口号
 
-```
+```shell
 vim ~/ProxyUtils/proxy_config.sh
 ```
 
+<br>
+
 ### 运行
 
-开启代理
+1. 开启代理
 
-```
+```shell
 proxy_on
 ```
 
-关闭代理
+2. 关闭代理
 
-```
+```shell
 proxy_off
 ```
+
+3. 开启git代理
+开启前确保开启代理
+```shell
+git_proxy_on
+```
+
+4. 关闭git代理
+关闭前确保关闭代理
+```shell
+git_proxy_off
+```
+
+<br>
 
 ### 测试
 
@@ -62,19 +87,14 @@ proxy_off
 curl www.google.com
 ```
 
+<br>
+
 ## 使用指南
 
 之后每次使用，只要执行**快速开始**中的**运行**即可
 
-## Git 代理设置
+<br>
 
-如果想要使用 git 代理
-运行
-
-```
-cd ./ProxyUtils
-chmod +x ./git_proxy.sh && ./git_proxy.sh
-```
 
 ## 许可证
 

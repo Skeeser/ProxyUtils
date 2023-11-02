@@ -8,6 +8,7 @@ port=7890
 git config --global  --unset https.https://github.com.proxy 
 git config --global  --unset http.https://github.com.proxy 
 
+
 # http
 # git config --global http.https://github.com.proxy http://$ip:$port
 # git config --global https.https://github.com.proxy https://$ip:$port

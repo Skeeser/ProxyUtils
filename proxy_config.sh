@@ -19,3 +19,18 @@ function proxy_off(){
     unset https_proxy
     echo -e "已关闭代理"
 }
+
+
+# 开启git代理
+function git_proxy_on(){
+    git config --global http.proxy "socks5://$ip:$port"
+    git config --global https.proxy "socks5://$ip:$port"
+    echo -e "已开启git代理"
+}
+
+# 关闭git代理
+function git_proxy_on(){
+    git config --global  --unset https.https://github.com.proxy 
+    git config --global  --unset http.https://github.com.proxy 
+    echo -e "已关闭git代理"
+}
