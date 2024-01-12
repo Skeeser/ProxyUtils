@@ -29,7 +29,7 @@ function git_proxy_on(){
 }
 
 # 关闭git代理
-function git_proxy_on(){
+function git_proxy_off(){
     git config --global  --unset https.https://github.com.proxy 
     git config --global  --unset http.https://github.com.proxy 
     echo -e "已关闭git代理"
